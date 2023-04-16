@@ -1,6 +1,11 @@
 import Head from 'next/head'
+import { observer } from "mobx-react-lite";
+import {useMobxStore} from './_app'
 
-export default function Home() {
+function IndexPage() {
+  const store = useMobxStore()
+  // @ts-ignore
+  console.log(store.size)
   return (
     <>
       <Head>
@@ -64,3 +69,15 @@ export default function Home() {
     </>
   )
 }
+
+export const getServerSideProps = async () => {
+  return {
+    props: {
+      initialState: {
+          list: [{}, {}]
+      }
+    }
+  };
+};
+
+export default observer(IndexPage);
