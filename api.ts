@@ -13,3 +13,20 @@
 // search - http://gutendex.com/books/?search=dickens%20great
 // sort - ascending / descending / popular
 // topic - http://gutendex.com/books/?topic=children
+
+
+
+
+export const getBooks = async (params) => {
+      try {
+        const response = await fetch(
+            `https://gutendex.com/books/?${new URLSearchParams({
+                params
+            })}`
+          );
+          const responseJson = await response.json();
+          return responseJson
+      } catch (error) {
+
+      }
+}

@@ -21,3 +21,19 @@ export interface Book {
   formats: Format
   download_count: number
 }
+
+export interface BooksResponse {
+  count: number
+  next: string | null
+  previous: string | null
+  results: Book[]
+}
+
+export interface Params {
+  page?: number
+  languages?: string[]
+  copyright?: boolean
+  search?: string
+  sort?: 'ascending' | 'descending' | 'popular'
+  topic?: string
+}

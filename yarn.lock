@@ -1677,6 +1677,11 @@ react-dom@18.2.0:
     loose-envify "^1.1.0"
     scheduler "^0.23.0"
 
+react-hooks-paginator@^0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/react-hooks-paginator/-/react-hooks-paginator-0.5.1.tgz#334f197bc788dfb17d41903db44bdbdc9dbb1545"
+  integrity sha512-rI9Cv6kowjI6gDq/EexF5L7D2rpHDe5SRtMwdW5EP9UASatqO/L9tZOBS2Azqd9yC714MJ+GSwNEYxeO1geP5g==
+
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
